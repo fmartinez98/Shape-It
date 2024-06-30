@@ -1,4 +1,4 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+![image](https://github.com/Shape-It/shape-it-web/assets/89869262/40919952-33be-4bbf-bc2f-d60eead09e1a)
 
 # Getting Started
 

@@ -1,25 +1,17 @@
 import React from 'react';
-import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import { Section } from '../../ui';
 import { HomeScreenProps } from '../../navigation/types';
+import { strings } from '../../localization/en';
 
 const HomeScreen: React.FC<HomeScreenProps> = () => {
   return (
     <ScrollView contentInsetAdjustmentBehavior="automatic">
       <View>
-        <Section title="Home">
-          <Text style={styles.highlight}>Home Screen</Text> is meant to contain
-          the principal information of the app
-        </Section>
+        <Section title={strings.home.title}>{strings.home.subtitle}</Section>
       </View>
     </ScrollView>
   );
 };
-
-const styles = StyleSheet.create({
-  highlight: {
-    fontWeight: '700',
-  },
-});
 
 export default HomeScreen;

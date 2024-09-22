@@ -1,5 +1,4 @@
-export const COLORS = {
-  colors: {
+export const colors = {
     accentA: '#5AC1FF',
     accentA2XDark: '#00001F',
     accentADark: '#08527F',
@@ -64,9 +63,4 @@ export const COLORS = {
     translucent: '#00000000',
     translucentBackdrop: '#121212CC',
     translucentCardBackdrop: '#2C2C2EA6',
-  },
-  gradients: {
-    splashScreen: ['#121212', '#242424'],
-    welcomeScreen: ['#5AC1FF', '#D4EFFF'],
-  },
-} as const;
+  } as const;

@@ -6,6 +6,7 @@ import { useAppDispatch } from '../../hooks/useRedux';
 import { clearLogin } from '../../store/slices/login/login';
 import { strings } from '../../localization/en';
 import PressableButton from '../../ui/molecules/PressableButton';
+import Container from '../../ui/atoms/Container';
 
 const ProfileScreen: React.FC<ProfileScreenProps> = () => {
   const dispatch = useAppDispatch();
@@ -15,23 +16,28 @@ const ProfileScreen: React.FC<ProfileScreenProps> = () => {
   };
 
   return (
-    <View style={styles.container}>
-      <Section title={strings.profile.title}>
-        {strings.profile.subtitle}
-      </Section>
+    <Container>
+      <View style={styles.content}>
+        <Section title={strings.profile.title}>
+          {strings.profile.subtitle}
+        </Section>
+      </View>
       <PressableButton
         title={strings.profile.button}
         onPress={logout}
         testID="logout-button"
+        style={styles.button}
       />
-    </View>
+    </Container>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
+  content: {
     flex: 1,
-    justifyContent: 'space-between',
+  },
+  button: {
+    marginBottom: 12,
   },
 });
 

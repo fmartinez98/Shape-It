@@ -43,7 +43,6 @@ export const Section: React.FC<SectionProps> = ({ children, title, style }) => {
 const styles = StyleSheet.create({
   sectionContainer: {
     marginTop: 32,
-    paddingHorizontal: 24,
   },
   sectionTitle: {
     fontSize: 24,

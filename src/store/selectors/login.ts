@@ -5,10 +5,10 @@ export const selectLogin = createSelector(selectSelf, state => state.login);
 
 export const selectLoginEmail = createSelector(
   selectLogin,
-  ({ login }) => login.email ?? '',
+  ({ login }) => login.email,
 );
 
 export const selectLoginPassword = createSelector(
   selectLogin,
-  ({ login }) => login.password ?? '',
+  ({ login }) => login.password,
 );

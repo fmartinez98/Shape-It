@@ -10,25 +10,26 @@ import {
 import TextInputField from '../../ui/atoms/TextInput';
 import { strings } from '../../localization/en';
 import PressableButton from '../../ui/molecules/PressableButton';
+import Container from '../../ui/atoms/Container';
 
 const LoginScreen: React.FC<LoginScreenProps> = () => {
   const dispatch = useAppDispatch();
-  const [username, setUsername] = useState<string>('');
+  const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
 
   const loginWithNewUser = () => {
-    dispatch(updateLoginEmail('test@user.com'));
-    dispatch(updateLoginPassword('test@password'));
+    dispatch(updateLoginEmail(email));
+    dispatch(updateLoginPassword(password));
   };
 
   return (
-    <View style={styles.container}>
+    <Container>
       <View style={styles.content}>
         <Section title={strings.login.title}>{strings.login.subtitle}</Section>
         <TextInputField
-          value={username}
-          placeholder={strings.login.username}
-          onChangeText={setUsername}
+          value={email}
+          placeholder={strings.login.email}
+          onChangeText={setEmail}
           style={styles.textInput}
         />
         <TextInputField
@@ -43,21 +44,16 @@ const LoginScreen: React.FC<LoginScreenProps> = () => {
         testID="login-button"
         onPress={loginWithNewUser}
       />
-    </View>
+    </Container>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'space-between',
-  },
   content: {
     flex: 1,
   },
   textInput: {
     marginVertical: 10,
-    paddingHorizontal: 24,
   },
 });
 

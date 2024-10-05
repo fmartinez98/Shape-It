@@ -38,6 +38,7 @@ const TextInputField = ({
           style={styles.input}
           value={value}
           placeholder={placeholder}
+          autoCapitalize="none"
           placeholderTextColor={'gray'}
           secureTextEntry={isSecureTextEntry}
           {...props}
@@ -58,14 +59,13 @@ const TextInputField = ({
 const styles = StyleSheet.create({
   input: {
     flex: 1,
-    color: 'gray',
     padding: 12,
   },
   inputContainer: {
     minHeight: 60,
     borderColor: 'black',
     borderWidth: 1,
-    borderRadius: 6,
+    borderRadius: 12,
     flexDirection: 'row',
   },
   toggle: {

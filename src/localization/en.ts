@@ -7,7 +7,7 @@ export const strings = {
     login: {
         title: 'Login Screen',
         subtitle: 'Login Screen is meant to contain the principal auth information',
-        username: 'Username',
+        email: 'Email',
         password: 'Password',
         button: 'Continue'
     },

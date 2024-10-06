@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "111685855248",
+    "project_id": "shape-it-a01ad",
+    "storage_bucket": "shape-it-a01ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:111685855248:android:a982287a25e74488284295",
+        "android_client_info": {
+          "package_name": "com.shapeit.training"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIGejkOqlRuMUG2luaWROfFPpZjXP5aUc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
